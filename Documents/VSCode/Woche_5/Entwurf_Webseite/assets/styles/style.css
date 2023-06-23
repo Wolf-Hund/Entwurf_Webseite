@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+* ::before,
+* ::after {
+    box-sizing: inherit;
+}
+
+h1,
+div,
+p,
+header,
+main,
+section,
+aside,
+footer {
+    border: 1px solid red;
+    font-family: 'Comforter Brush', cursive, 'Pacifico', cursive, sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+header,
+footer {
+    flex: 0 0 content;
+}
+
+main {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+aside {
+    width: 25%;
+}
+
+section {
+    flex: 1;
+}
+
+div p {
+    margin: 0;
+    padding: 5px;
+}
+
+div.reihen {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+div.zweiteReihe {
+    display: flex;
+    width: 100%;
+    /*  height: 50%; */
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.scroll {
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+footer.reihen {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#blau {
+    background-color: rgb(33, 205, 239);
+    max-height: 10%;
+}
+
+#grün {
+    background-color: rgb(54, 239, 100);
+}
+
+#rot {
+    background-color: rgb(239, 96, 96);
+    max-height: 10%;
+}
+
+#gelb {
+    background-color: rgb(243, 243, 40);
+}
+
+#orange {
+    background-color: rgb(243, 155, 72);
+    max-height: 10%;
+}
+
+#grau {
+    background-color: rgb(133, 136, 136);
+}
